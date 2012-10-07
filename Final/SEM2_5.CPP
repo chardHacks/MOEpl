@@ -432,6 +432,13 @@ char* validType(char from[30], char to[30], int talk, char opt[5])
    expSuc = 0;
    return "ERR";
   }
+
+  if(!strcmp(from, "INT_TYP"))
+  {
+   if(!strcmp(to, "INTEGER"))
+    return "INTEGER";
+  }
+
   if(!strcmp(from, to))
    {
     if(!strcmp(from, "INT_TYP"))
@@ -826,6 +833,7 @@ char* A(char leftToken[30])
    if(expSuc)
     strcpy(type, validType(type, expType, 1, ""));
 
+
    return type;
   }
  else
@@ -921,14 +929,20 @@ char* exp(char leftToken[30], char* lex)
  else if(!strcmp(type, "ERR"))
   return "ERR";
  else if(strcmp(expType, "NULL"))
+ {
+  if(!(strcmp(type,"STR_TYP") && strcmp(type,"STRING_LITERAL")) && !strcmp(lex, "+"))
+   strcpy(expType, "STRING_LITERAL");
  if(!(strcmp("ERR", validType(type, expType, 0, lex)) && strcmp("ERR", validType(leftToken, expType, 0,lex))) && strcmp(leftToken, ""))
  {
   char err[120];
   strcpy(err, "Operator ");
   strcat(err, lex);
-  strcat(err, " must be applied to INTEGER or FLOAT type.");
+  strcat(err, " cannot be applied to ");
+  strcat(err, type);
+  strcat(err, " .");
   error(err);
   return "ERR";
+ }
  }
  strcpy(type2, exp(type, lex));
  if(!strcmp(type2, "NULL"))
