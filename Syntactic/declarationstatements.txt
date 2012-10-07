@@ -1,0 +1,9 @@
+declaration statements
+
+num myNum;
+flt myNum : 2.0;
+bool myNum : flse;
+str myStr, thisStr;
+num myNum : 2, thisNum;
+str myStr, thisStr : 'this is string';
+num myNum, thisNum: 2, theirNum : 1;

@@ -1,0 +1,7 @@
+assigment statements
+
+myNum : 0;
+myNum : 1 + 1;
+myNum : ((2 + 3) * 6) ^ 3;
+myNum : hisNum : 2 + (3 * (6 ^ 3));
+myStr : thisStr : 'this is string';

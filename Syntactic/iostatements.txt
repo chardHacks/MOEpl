@@ -1,0 +1,8 @@
+
+io statements
+
+inpt strCntry;
+prnt 'hello ' + strCntry + ' and hello world';
+
+
+

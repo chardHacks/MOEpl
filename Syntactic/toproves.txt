@@ -1,0 +1,95 @@
+declaration statements
+
+num myNum;
+flt myNum : 2.0;
+bool myNum : flse;
+str myStr, thisStr;
+num myNum : 2, thisNum;
+str myStr, thisStr : 'this is string';
+num myNum, thisNum: 2, theirNum : 1;
+
+
+arithmetic expressions
+
+1
+1 + 1
+(2 + 3) * (6 ^ 3)
+((2 + 3) * 6) ^ 3
+(2 + (3 * 6) ^ 3)
+2 + (3 * (6 ^ 3))
+
+
+assigment statements
+
+myNum : 0;
+myNum : 1 + 1;
+myNum : ((2 + 3) * 6) ^ 3;
+myNum : hisNum : 2 + (3 * (6 ^ 3));
+myStr : thisStr : 'this is string';
+
+
+relational and logical expressions
+
+ourNum & (hisNum | !myNum)
+(hisNum<=!myNum) | (myNum>=hisNum)
+(!ourNum & !hisNum) | !myNum
+(!myNum &(hisNum = herNum) & ourNum) | (myNum | herNum | hisNum)
+
+
+conditional statements	
+
+is his1Num < his2Num ?
+  his1Num : his1Num^2;
+
+is his1Num < his2Num ?
+  his1Num : his1Num^2;
+no
+{
+ his1Num : his2Num;
+ his2Num : his2Num^his2Num;
+}
+  
+is (hisNum | !myNum) ?
+{
+ is herNum & ourNum ?
+  hisNum : 2;
+ no
+  {
+  herNum : 1 + (2 % 3);
+  }
+}
+no
+{
+ is his1Num < his2Num ?
+  num myNum : 2, thisNum;
+ no
+  str myStr, thisStr : 'this is string';
+}
+
+control statements
+
+rpt is (hisNum | !myNum) ?
+{
+ rpt is !herNum & ourNum ?
+  hisNum : 2;
+ no
+  {
+  herNum : 1 + (2 % 3);
+  }
+}
+no
+{
+ rpt is myNum < 100 ?
+ {
+  myNum : myNum + 1;
+ } 
+ str myStr, thisStr : 'this is string';
+}
+
+io statements
+
+inpt strCntry;
+prnt 'hello ' + strCntry + ' and hello world';
+
+
+

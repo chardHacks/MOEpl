@@ -1,0 +1,6 @@
+relational and logical expressions
+
+ourNum & (hisNum | !myNum)
+(hisNum<=!myNum) | (myNum>=hisNum)
+(!ourNum & !hisNum) | !myNum
+(!myNum &(hisNum = herNum) & ourNum) | (myNum | herNum | hisNum)
