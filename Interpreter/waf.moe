@@ -1,0 +1,35 @@
+//this should work fine. please
+run() {
+//abdibur
+        cnst num MAX_VAL : 100; //does this work?
+    	num incr : 2;
+        num     id            :       -1;
+        flt a : 2.2;
+        flt yes : a;
+        //num id : 2, MAX_VAL, id2;
+        a :1+2-3+4*5;
+		a : (5-id)^(3*a);
+		bool byea : true;
+		byea : ((true) & flse | (true)) & (1 = 2);
+		
+        flt love            : 1.43;
+//chumorba       
+        bool isPrime    :       flse;
+       
+        rpt is incr ? {
+        num itrate;
+        itrate : -2;
+        itrate : itrate;
+                is isPrime ?{
+                        prnt incr;
+                        isPrime : flse;
+                }
+	no
+                prnt love ;
+	
+        incr : incr + 1;
+        }
+        //prnt 'FYEAH!!' + id + 'YEAH!';
+//end
+yes : MAX_VAL *123 ^(2 + incr);
+}

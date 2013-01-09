@@ -1,0 +1,10 @@
+run()
+{
+num a : 1;
+num b : 2;
+prnt 'Hello World! \n';
+prnt a;
+prnt'\n\n\t\n\t:)';
+prnt 'I sure hope arithmetics work in prnt statements '@a+b@' FYEAH!';
+prnt 'Are you gay? : '@ flse & flse @;
+}

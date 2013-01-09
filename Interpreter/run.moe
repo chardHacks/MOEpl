@@ -1,0 +1,19 @@
+run()
+{
+	num a;
+
+	a : 13;
+
+	num b : 17;
+	num c, d, e;
+
+	c : a * b;
+	prnt 'Value of c is' @c@;
+	prnt '\n\n\tValue of d should be' @(a-1)*(b-1)@;
+
+	{
+		num a;
+		a = 10023;
+		prnt a;
+	}
+}
